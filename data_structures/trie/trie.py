@@ -1,5 +1,4 @@
-"""
-A Trie/Prefix Tree is a kind of search tree used to provide quick lookup
+"""A Trie/Prefix Tree is a kind of search tree used to provide quick lookup
 of words/patterns in a set of words. A basic Trie however has O(n^2) space complexity
 making it impractical in practice. It however provides O(max(search_string, length of longest word)) 
 lookup time making it an optimal approach when space is not an issue.
@@ -12,8 +11,7 @@ class TrieNode:
         self.is_leaf = False
 
     def insert_many(self, words: [str]):
-        """
-        Inserts a list of words into the Trie
+        """Inserts a list of words into the Trie
         :param words: list of string words
         :return: None
         """
@@ -21,8 +19,7 @@ class TrieNode:
             self.insert(word)
 
     def insert(self, word: str):
-        """
-        Inserts a word into the Trie
+        """Inserts a word into the Trie
         :param word: word to be inserted
         :return: None
         """
@@ -34,8 +31,7 @@ class TrieNode:
         curr.is_leaf = True
 
     def find(self, word: str) -> bool:
-        """
-        Tries to find word in a Trie
+        """Tries to find word in a Trie
         :param word: word to look for
         :return: Returns True if word is found, False otherwise
         """
@@ -47,8 +43,7 @@ class TrieNode:
         return curr.is_leaf
 
     def delete(self, word: str):
-        """
-        Deletes a word in a Trie
+        """Deletes a word in a Trie
         :param word: word to delete
         :return: None
         """
@@ -76,8 +71,7 @@ class TrieNode:
 
 
 def print_words(node: TrieNode, word: str):
-    """
-    Prints all the words in a Trie
+    """Prints all the words in a Trie
     :param node: root node of Trie
     :param word: Word variable should be empty at start
     :return: None
