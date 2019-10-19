@@ -1,5 +1,4 @@
-"""
-The stock span problem is a financial problem where we have a series of n daily
+"""The stock span problem is a financial problem where we have a series of n daily
 price quotes for a stock and we need to calculate span of stock's price for all n days.
 
 The span Si of the stock's price on a given day i is defined as the maximum
