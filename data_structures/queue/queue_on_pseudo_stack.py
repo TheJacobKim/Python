@@ -12,7 +12,8 @@ class Queue:
 
     """Enqueues {@code item}
     @param item
-        item to enqueue"""
+        item to enqueue
+    """
 
     def put(self, item):
         self.stack.append(item)
@@ -21,7 +22,8 @@ class Queue:
     """Dequeues {@code item}
     @requirement: |self.length| > 0
     @return dequeued
-        item that was dequeued"""
+        item that was dequeued
+    """
 
     def get(self):
         self.rotate(1)
@@ -33,7 +35,8 @@ class Queue:
 
     """Rotates the queue {@code rotation} times
     @param rotation
-        number of times to rotate queue"""
+        number of times to rotate queue
+    """
 
     def rotate(self, rotation):
         for i in range(rotation):
@@ -43,7 +46,8 @@ class Queue:
             self.length = self.length - 1
 
     """Reports item at the front of self
-    @return item at front of self.stack"""
+    @return item at front of self.stack
+    """
 
     def front(self):
         front = self.get()
